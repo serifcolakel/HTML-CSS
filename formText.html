@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formText.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <form>
+      <!--html input element ara for more-->
+      <input type="text" placeholder="Email" />
+      <input type="text" value="jc@gmail.com" />
+      <input type="number" value="123123213" />
+      <input type="password" />
+      <input type="date" value="12-10-2020" />
+      <input type="email" readonly value="..." />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <textarea>Comment...</textarea>
+    </form>
+
+    <form>
+      <input type="text" list="countries" />
+      <datalist id="countries">
+        <!--data-value="1" ile sunucuya veri böyle gönderilir-->
+        <option data-value="1">Turkey</option>
+        <option>Australia</option>
+        <option>ABD</option>
+        <option>Canada</option>
+        <option>India</option>
+      </datalist>
+      <form>
+        <!--Drop-down Lists-->
+        <select>
+          <option value="">Select a Course...</option>
+          <optgroup>
+            <option>Front-end Courses...</option>
+            <!--aşşağıya selected eklenir direkt olarak onu seçer-->
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+          </optgroup>
+          <optgroup>
+            <option>Back-end Courses...</option>
+            <option value="1">Node.js</option>
+            <option value="2">ASP.net</option>
+            <option value="3">Django</option>
+          </optgroup>
+        </select>
+      </form>
+    </form>
+
+    <!--Check Boxes-->
+    <form>
+      <div>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" disabled />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
+    </form>
+
+    <!--Radio Effect-->
+    <form>
+      <div class="radio-custom">
+        <!--disabled otomatik olarak onu seçilmez yapacak-->
+        <input type="radio" name="membership" id="silver" disabled />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div class="radio-custom">
+        <!--checked otomatik olarak onu seçecek-->
+        <input type="radio" name="membership" id="gold" checked />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+      <div class="radio-custom">
+        <input type="radio" name="membership" id="yellow" />
+        <label for="yellow" class="label-inline">Yellow</label>
+      </div>
+    </form>
+
+    <!--sliders-->
+    <form>
+      <input type="range" min="0" max="100" value="0" />
+    </form>
+
+    <!--File Inputs-->
+    <form>
+      <!--accept="audio/*" video, image, audio olarak seçilmesine izin verir-->
+      <!--multiple ile çoklu seçilir , accept=".jpg" ile sadece .jpg uzantılı dosyalar seçilir-->
+      <input class="file" type="file" multiple accept=".jpg" />
+    </form>
+
+    <!--Grouping Related Fields-->
+    <form translate="no">
+      <section>
+        <h2>Billing Address</h2>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </section>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+    </form>
+
+    <!--Hidden Fields Sunucuya 1234 değerini gönderecek-->
+    <form>
+      <input type="hidden" name="course-id" value="1234" />
+    </form>
+
+    <!--Data Validation-->
+    <form>
+      <!--required boş olup olmadığına bakıyor 
+        minlegth="3" 3 karakterden az olup olmamasına bakıyor-->
+      <input type="text" required minlength="3" maxlength="10" />
+      <input type="email" required minlength="3" maxlength="10" />
+      <input type="date" required minlength="3" maxlength="10" />
+      <input type="numbers" required min="0" max="5" />
+      <button type="submit">Submit</button>
+    </form>
+    <!--Submitting The Form-->
+    <!--formspree adresine aşağıdaki name ve email adreslerini gönderiyoruz-->
+    <form action="https://formspree.io/f/maylrazg" method="POST">
+      <input type="text" placeholder="Name" name="name" />
+      <input type="text" placeholder="Email" name="email" />
+      <input type="text" placeholder="text" name="text" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

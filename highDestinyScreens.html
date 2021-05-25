@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/highDestinyScreens.css" />
+  </head>
+  <body>
+    <img class="meal" src="images/meal.jpg" alt="a bowl of salmon and curry" />
+    <!-- css'teki set değere göre 1x,2x,3x olarak katları hesaplanırken
+        aşagıdaki kodda ise aynı resmin farklı telefon markalarında pixel olarak değişmelerinin düzenlemek
+         için tanımlama yapılarak her telefonda gerekli değişiklik ile ayarlanması sağlanabilir böylece 
+         keskinlik artar     -->
+    <img
+      class="meal"
+      src="images/meal.jpg"
+      alt="a bowl of salmon and curry"
+      srcset="images/meal.jpg 1x, images/meal@2x.jpg 2x, images/meal@3x.jpg 3x"
+    />
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/resolutionSwithching.css" />
+  </head>
+  <body>
+    <!-- 400w ile w genişlik olarak 400piksel olduğunu ifade eder.-->
+    <!-- sizes ile masaüstü, tablet, telefon için set olarak belirlenen pixel değerleri 100wv=100% gibi %
+    olarak ifade edilebilir ayrıca "responsive image breakpoints generator" aranarak aşağıdaki 
+    değişim kod olarak ve resimler teker teker elde edilebilir -->
+    <img
+      class="meal"
+      src="images/meal.jpg"
+      alt="a bowl of salmon and curry"
+      srcset="
+        images/meal.jpg     400w,
+        images/meal@2x.jpg  800w,
+        images/meal@3x.jpg 1200w
+      "
+      sizes="
+      (max-width: 300px) 100vw,
+      (max-width: 700px) 50vw,
+      (max-width:100px) 33vw"
+    />
+  </body>
+</html>
