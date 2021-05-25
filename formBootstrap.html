@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formBootstrap.css" />
+    <!--https://getbootstrap.com/docs/5.0/getting-started/download/-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--https://milligram.io/#getting-started bootstrap yerine daha az yer kaplar VE
+    SINIFLARIN KULLANILMASINA GEREK KALMAZ-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name" translate="no"> <p>Name</p></label>
+        <input id="name" type="text" translate="no" />
+      </div>
+      <div>
+        <label for="email" translate="no"><p>Email</p></label>
+        <input id="email" type="email" />
+      </div>
+      <div>
+        <label for="password" translate="no">
+          <p>Password</p>
+        </label>
+        <input
+          id="password"
+          class="form-control"
+          type="password"
+          value="FakePSW"
+        />
+      </div>
+      <button type="submit" translate="no">Register</button>
+      <button type="reset" translate="no">Clear</button>
+    </form>
+  </body>
+</html>
