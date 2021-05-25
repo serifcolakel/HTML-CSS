@@ -1,0 +1,6 @@
+p {
+  /*text-padding-border-margin*/
+  padding: 10px 20px;
+  margin: 0;
+  border: 5px solid gold;
+}

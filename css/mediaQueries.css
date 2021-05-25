@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  background: gold;
+  padding: 1rem;
+}
+.box:nth-last-of-type(2) {
+  background: dodgerblue;
+}
+/*Masaüstünde 600px ile 900px arasında asagıdaki islemler
+telefonda set deger olacak*/
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+}
+/*width 600px'den buyukse box'un arka planını beyaz 
+yapacak*/
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background: white;
+  }
+}
+/*Çıktı alınması için değerler böylece girilebilir*/
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .box {
+    padding: 0.5cm;
+  }
+}

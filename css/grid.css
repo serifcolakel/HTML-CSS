@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  height: 40vh;
+  /*3x2 lik*/
+  /*grid-template-rows: repeat(3, 100px);
+  ile aynı grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(2, 100px);
+  ile aynı grid-template-rows: 100px 100px; en sadesi asagıda*/
+  /*grid-template: repeat(3, 100px) / repeat(2, 100px);*/
+  grid-template: 100px auto 100px / 30fr 70fr;
+  /*boyut 
+  degistiginde 100pxler sabit kalacak, 30fr ve 70fr ise 
+  30'a 70 oranlarında ayarlı hale gelecek*/
+  /* row-gap: 10px; satırlar arasında 10px bosluk olacak*/
+  /* column-gap: 10px; sutunlar arasında 10px bosluk olacak*/
+  gap: 10px; /*Kısa yolu degerler aynı ise böyle
+   degilse gap:10px 20px olacak */
+  border: 3px solid lightblue;
+  /*satır ve sutun ıcınde merkeze yada default yere alma
+  justify-items: stretch; default'u stretch/center
+  align-items: stretch;*/
+  /*justify-content: center;
+  align-content: center;
+  sayfa icinde merkeze alma */
+  /*Yada En kolay yolu*/
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "bos footer";
+  /*3x2 lik oldugu icin her bir kelimeyi matris elemanı gibi dusun*/
+}
+.box {
+  background: gold;
+}
+.box-one {
+  /*grid-column: 1 / 3; 1den 3 e kadar yayılacak yada 1 / span 2 ile 
+  2 tane sutun alacak*/
+  /*grid-row: 1 / 3;
+  start / end */
+  /*row / column */
+  /*Kısaca 
+  grid-area: 1 / 1 / 1 3;
+  1.satır / 1.sutundan baslar / 1.satır / 3.sutunda biter*/
+
+  /*Yada En kolay yolu*/
+  grid-area: header;
+}
+.box-four {
+  grid-area: footer;
+}

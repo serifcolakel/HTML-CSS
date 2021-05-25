@@ -1,0 +1,19 @@
+html {
+  /*62.5% of 16px = 10px*/
+  font-size: 62.5%;
+}
+body {
+  margin: 10px;
+}
+.box {
+  /*font-size: 20px;*/
+  /*width: 10em; 10 x font size (default:16*10px font-size:20px; ise 
+  20*10px olur)*/
+  width: 15rem; /* font-size:62.5% oldugu icin 150px*/
+
+  /*width:50vw; ise görüntü genişliğinin %50 si anlamına gelir.*/
+  height: 40vh; /*Görüntü yüksekliğinin %40'ı anlamına geliyor*/
+  background-color: gold;
+  border-top: 3px solid orange;
+  display: block;
+}

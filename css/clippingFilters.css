@@ -1,0 +1,24 @@
+.images:hover {
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+  filter: grayscale(10%) contrast() brightness(100%) blur(2px) opacity(100%)
+    saturate();
+}
+.Filters:hover {
+  /*css filter functions*/
+
+  filter: grayscale(0) contrast() brightness(100%) blur(0px) opacity()
+    saturate() drop-shadow(20px 20px 30px red);
+}

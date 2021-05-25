@@ -1,0 +1,49 @@
+body {
+  margin: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  /*Df:left, Direction ile baslangıc sag veya sol olabilir English/Arabic icin*/
+  direction: ltr;
+}
+h1,
+h2 {
+  margin: 0.5rem 0.5rem 2rem;
+}
+/*ideal reading line 50 - 70 character*/
+/*p + p => paragraftan sonraki paragraf icin gecerli olacak */
+p {
+  padding: 0.3rem 0.5rem 0.5rem 0.3rem;
+  border: 2px dotted lightcoral;
+  width: 50ch;
+  /*default:left, justify önerilir*/
+  text-align: justify;
+  /*ilk satırda 1remlik yer bırakarak baslar*/
+  text-indent: 1rem;
+  /*text'in altına yada uzerine cizik*/
+  text-decoration: none;
+  /*buyukmek(uppercase), 
+  kucultmek(lowercase),
+  ilk harf buyuk(capitalize)*/
+  text-transform: capitalize;
+  /*KULLANILMAZ!!paragrafı yatay olarak sadece 1 satırda yazar
+  white-space: nowrap;
+  border: 3px solid gold;
+  overflow: hidden;
+  text-overflow: ellipsis;*/
+
+  /*Sutun sayısını girerek text'i sutune boluyor*/
+  column-count: 2;
+  /*Sutun arası boslukları belirliyorz*/
+  column-gap: 2rem;
+  /*Sutun arasında cizgi, nokta yada farklı olarak ayarlanabilir */
+  column-rule: 3px dotted lightblue;
+}
+p + p {
+  width: 50ch;
+  color: red;
+  text-decoration: line-through;
+  /*default:left, justify önerilir*/
+  text-align: center;
+  /*ilk satırda 1remlik yer bırakarak baslar*/
+}

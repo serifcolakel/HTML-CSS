@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "alexBrush";
+  src: url("fonts/open-sans/alexbrush-regular-webfont.woff2") format("woff2"),
+    url("fonts/open-sans/alexbrush-regular-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-style: 62.5%;
+}
+body {
+  margin: 5%;
+}
+.container {
+  width: 20rem;
+  border: 2px solid black;
+}
+h1 {
+  font-size: 3.052rem;
+}
+
+p {
+  font-family: "alexBrush", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-indent: 1rem;
+}
+img {
+  width: 90%;
+  object-fit: cover;
+}
+
+p,
+h1,
+h2,
+.container,
+img,
+li {
+  margin-left: 1%;
+}
+@media screen and (min-width: 900px) {
+  body {
+    margin: 4%;
+  }
+  .container {
+    width: 100rem;
+  }
+  p,
+  h1,
+  h2,
+  .container,
+  img,
+  li {
+    margin-left: 3%;
+  }
+}

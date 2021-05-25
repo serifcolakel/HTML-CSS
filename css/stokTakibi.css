@@ -1,0 +1,165 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  flex-direction: column;
+}
+
+.p1 {
+  color: white;
+  text-align: center;
+  justify-self: center;
+  font-size: 2rem;
+}
+.logo {
+  display: flex;
+  background-color: #221a2e;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background: #2a2138;
+  color: #cfc6dc;
+}
+.sol {
+  flex: 3;
+}
+.sag {
+  flex: 20;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  color: white;
+}
+
+.menu a,
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  object-fit: cover;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.menu li {
+  text-align: center;
+  padding: 1rem;
+}
+
+.menu li:hover,
+.logo:hover,
+.menu .active {
+  background: #221a2e;
+  color: #fff;
+}
+
+.menu .fas {
+  margin-right: 1rem;
+  width: 1rem;
+  text-align: center;
+}
+.fa-broadcast-tower {
+  color: brown;
+  font-size: 3rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #221a2e;
+  color: white;
+  height: 5vh;
+}
+.link a {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  color: white;
+}
+
+/*Linke Açıklama Ekleme*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-bottom: 1px solid blue;*/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 0;
+  width: 120px;
+  /* Position the tooltip */
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .sag {
+    background: white;
+    flex: 8;
+  }
+  .sol {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+  }
+  .menu {
+    height: 88vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .link {
+    height: 5vh;
+  }
+  .link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+  .menu ul {
+    padding-left: 0;
+    flex: 1;
+    list-style: none;
+  }
+}

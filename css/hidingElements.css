@@ -1,0 +1,4 @@
+.first {
+  /*display: none;Ekrana yazdırmaz*/
+  visibility: hidden; /*classı gizledi*/
+}

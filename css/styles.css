@@ -1,0 +1,221 @@
+body {
+  margin: 10px;
+}
+/* BÖLÜM 1 */
+
+/*p {
+  color: red;
+  text-align: center;
+}
+*/
+
+/*Baba ve cocuk esit ve ikisi icinde gecerli
+#products p {
+  
+  color: blueviolet;
+}
+*/
+
+/*Baba > cocuk sadece baba icin gecerli
+#products > p {
+  color: yellow;
+}
+*/
+
+/*Gecerli id(products) dısındaki ilk paragraflarda degisiklik yapar.
+#products + p {
+  color: red;
+}
+*/
+
+/*Gecerli id dısındaki tum paragraflarda degisiklik yapar.
+#products ~ p {
+  color: green;
+}
+*/
+
+/*icinde google olanın sadece rengini degistirir.
+a[href*="google"] {
+  color: red;
+}
+*/
+
+/*baslangıcı https olanda degisiklik yapar
+a[href^="https"] {
+  color: orange;
+}
+*/
+
+/*Baslanıgıcı https bitisi .com olanda degisiklik yapar sadece harfte olabilir
+a[href^="https"][href$=".com"] {
+  color: yellow;
+}
+*/
+
+/*BÖLÜM 2*/
+/*Sözde sınıf secici icin asagıdaki gibi kullanıyoruz*/
+/*DİKKAT:Koddaki gibi kendisinden once herhangi bir baslık varsa ona uygular
+article :first-child {
+  font-size: 140%;
+  font-style: italic;
+}
+*/
+
+/*Bu sorunuz cözmek ıcın asagagıdaki islem uygulanır
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+  color: blue;
+}
+*/
+
+/*Sadece Son paragrafta islem degisikligi icin asagıdaki islem uygulanır
+ p yerine h1 header vb gelebilir
+article p:last-of-type {
+  font-weight: bold;
+  color: red;
+}
+*/
+
+/*Simdi ise linke efektik özelligi icin () icine odd(sadece tek), even(sadece cift), 
+n yada 2n gibi formuller ile listelenenler secilerek degisiklik yapılabilir
+ul li:nth-child(2n-1) {
+  color: deeppink;
+}
+*/
+
+/*Alt satılarıdaki islemlerde ise linke efektif göruntu verilerek mouse imleci ile 
+site uzerinde kontrol edilmesi sonucu siteye girilip girilmedigi gözlemlenebilir
+a:focus ile tab tusu ile hedef haline getirebilir
+a:visited,
+a:link {
+  color: yellow;
+}
+a:hover,
+a:focus {
+  color: deeppink;
+}
+*/
+
+/*BÖLUM 3 */
+/*Alt satılarıdaki kod ile firts letter class'ı icindeki paragrafta 
+degisiklik yapılabilir
+.first-letter {
+  font-size: 140%;
+  font-weight: bold;
+  color: blue;
+}
+*/
+
+/*Alt satırdaki kod ile p paragrafına ait ilk satırda 
+degisiklik yapılabilir
+p::first-line {
+  font-weight: bold;
+  color: red;
+}
+*/
+
+/*Alt satırdaki kod ile secilen paragrafın arkada planı 
+degistirilebilir
+p::selection {
+  background-color: pink;
+}
+*/
+
+/*Alt satırdaki kod ile p paragrafından sonra content ile 
+yazı eklenebilir.
+p::before {
+  content: "...";
+  display: block;
+}
+*/
+
+/*Alt satırdaki kod ile  p paragrafından sonra content ile
+yazı eklenebilir
+p::after {
+  content: "---";
+}
+*/
+
+/*BÖLÜM 4*/
+/*Mouse ile h1, highlight, products uzerine gelindiginde
+(x,y,z) ile ifade edilen koordinatta 
+x=id secicisi varsa 1 yoksa 0'ı,
+y=class/attribute secicisi varsa 1 yoksa 0'ı,
+z=element secicisi varsa 1 yoksa 0'ı gösterir.
+Bu yuzdendir ki x>y>z önceligi vardır.
+Yani sadece x'i 1 olandaki degisiklik gerceklesir
+Ayrıca !important eklenen bunların dısında önceligi olacaktır
+
+
+h1 {
+  color: dodgerblue !important;
+}
+
+.highlight {
+  color: deeppink;
+}
+
+#products {
+  color: green;
+}
+*/
+
+/*Ayrıca asagidaki gibi (1,1,0) olarak ayarlanırsa öncelik 
+bunda olacak 
+.highlight#products {
+  color: darkmagenta;
+}
+
+.featured#products {
+  color: red;
+}
+*/
+
+/*Bölüm 5 Kalıtım
+Yazı tipinde gerekli özellikleri kalıtım olarak alır ve 
+degisitirilebilir
+p {
+  color: dodgerblue;
+  border: 1px solid black;
+}
+strong {
+  color: initial;
+  border: inherit;
+}
+*/
+
+/*Bölüm 6 Colors
+/*rgb(r,g,b) ile normal renk rgba(r,g,b,x) ile 
+ise normal renk + x ile opaklık degisitirebilir.
+.box {
+  width: 600px;
+  height: 200px;
+  background: coral;
+  background-color: rgba(255, 60, 0, 0.5);
+  background-color: #eb4034;
+  background-color: hsl(4, 82%, 56%);
+  background-color: hsla(4, 82%, 56%, 0.3);
+  background: linear-gradient(to bottom left, dodgerblue, yellow 50%, tomato);
+  to right/left yerine to bottom right/left yada to top right/left gelebilir.
+  ayrıca to right yerine 45deg ile derecede belirtilebilir.
+  yellow %30 ile %70 i diger renkten kaplanabilir
+  background: radial-gradient(circle at top left, white, yellow);
+  birinci parametre nasıl olacağı, diger parametreler ise renkler
+  border: 10px dashed royalblue;
+  /**dashed yerine solid veye dotted gelebilir
+  background: red;
+  /*top yerine bottom right left gelebilir
+  /*border-top: 20px dashed royalblue;
+  /*border: 10px dashed royalblue;
+  /*border-width: 10px 20px 10px 20px; sırasıyla top right bottom left(trbl)
+  /*Ayrıca 10 20 10 20 yerine 10 20 yazılırsa karsılıklı kenarları aynı olcude alır
+  /*border-radius: 50px; kırpma koselerden
+  box-shadow: 50px 5px 30px red;
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+}
+*/

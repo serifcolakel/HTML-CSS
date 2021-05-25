@@ -1,0 +1,22 @@
+body {
+  background: url(../images/bg-sanfrancisco.jpg);
+  /*DF:repeat, repeat-x x ekseninde, repeat-y y ekseninde tekrar */
+  background-repeat: no-repeat;
+  /*%100 kullanılırsa sonuna götürür*/
+  /*ilk deger yatay(sağa), ikinci dikey(asağı) pozisyon*/
+  /*background-position: 10% 50px;*/
+  height: 100vh;
+  /*iki deger olarakta girileblir 1. genislik ikinci yukseklik
+  ama heigh:100vh olmazsa DF degeri 0 old icin 0 alınır*/
+  /*Tam olarak sabit ölculere göre ayarladı*/
+  background-size: cover;
+  /*Arkada planı sabit hale getirdi*/
+  background-attachment: fixed;
+}
+
+.image {
+  width: 50px;
+  position: relative;
+  left: 275px;
+  top: 200px;
+}

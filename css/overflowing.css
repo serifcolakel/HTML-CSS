@@ -1,0 +1,8 @@
+.box {
+  border: 5px solid gold;
+  width: 350px;
+  height: 150px;
+  /*overflow: hidden; Fazla olanı gizler*/
+  /*overflow: scroll; Text iceresinde gezinmeye izin verir.*/
+  overflow: auto; /*overflow-x ve overflow-y'yi otomatik olarak atar.*/
+}

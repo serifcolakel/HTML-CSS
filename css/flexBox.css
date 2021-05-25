@@ -1,0 +1,38 @@
+.container {
+  height: 90vh;
+  border: 3px solid lightgrey;
+  display: flex; /*yan yana yapacak*/
+  flex-direction: row;
+  /*colum, row, column-reverse, row-reverse gibi secenekleri var*/
+  /*flex-wrap: wrap; ilk satır aldıgı kadar alır sonrası ikinci 
+  satıra gecer*/
+  justify-content: center;
+  /*center, flex-end, flex-start olabilir*/
+  /*Ayrıca space-evenly esit bosluk, space-between bas ve son 
+  arasında esit aralıklı olarak ayırır space-around bas ve son  
+  sayfa cizgisinden esit uzaklıkta ayrılır */
+  align-items: center;
+  align-content: center; /*tum icerigi etkileyerek merkeze alır*/
+}
+.box {
+  flex-basis: 5rem; /*auto olursa width'e göre, degilse width'i
+  20rem'e ayarlar*/
+  flex-grow: 2; /* hepsi icin 1 katı kadar buyume olur*/
+  flex-shrink: 1; /*hepsi icin 1 katı kadar kuculme olur*/
+  /*Yukarıdakiler yerine tek komut asagıdaki gibidir*/
+  flex: 2 1 15rem; /*1st:flex-grow, 2nd:flex-shrink, 
+  3th:flex-basis*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: lightblue;
+  margin: 1rem;
+}
+.box-one {
+  /*kendini ayarlıyacak, flex-wrap: wrap; aktif
+  oldugunda calısmaz*/
+  align-self: flex-start;
+  flex-grow: 2; /*sadece ilk box icin 2 katı kadar buyume olur*/
+}

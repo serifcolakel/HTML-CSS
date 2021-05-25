@@ -1,0 +1,88 @@
+.serif {
+  background-color: red;
+}
+table,
+td,
+th {
+  border: 10px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+}
+tfoot {
+  text-align: center;
+}
+a {
+  background-color: none;
+  width: 100%;
+  float: left;
+  margin-left: 1%;
+  margin-bottom: 5%;
+}
+p {
+  margin-top: 5%;
+  font-size: 1rem !important;
+}
+li {
+  margin-top: 5%;
+  color: blue;
+}
+ul {
+  margin-top: 5%;
+  color: orange;
+  list-style-type: square;
+}
+ol {
+  margin-top: 5%;
+  color: red;
+}
+dl {
+  margin-top: 5%;
+  color: chartreuse;
+}
+dt {
+  margin-top: 5%;
+  color: purple;
+}
+dd {
+  color: chocolate;
+}
+video {
+  width: 100%;
+  height: 200px;
+  float: top;
+  margin-top: 5%;
+  border-radius: 20px;
+}
+strong {
+  color: orange;
+  font-weight: inherit;
+  font-style: unset;
+  float: top;
+  margin-bottom: 5%;
+}
+figcaption {
+  text-align: center;
+}
+em {
+  color: red;
+  font-style: normal;
+}
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  float: top;
+  border-radius: 20px;
+  margin-left: 40%;
+  margin-right: 25%;
+}
+.product {
+  float: left;
+  margin-top: 5%;
+  background-color: gold;
+  width: 300px;
+}
+.highlight {
+  background-color: green;
+}

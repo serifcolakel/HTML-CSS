@@ -1,0 +1,14 @@
+body {
+  margin: 10px;
+  /*Alt set degerleri ile dikey 
+  olarak bosluk olusturulabilir
+  yada duzenlenebilir*/
+  font-size: 2rem;
+  /*line-height ile satr arası bosluk;*/
+  line-height: 1.5rem;
+}
+
+h1,
+h2 {
+  margin: 3rem 0rem 5rem; /*trlb r=0*/
+}

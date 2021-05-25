@@ -1,0 +1,38 @@
+.boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+  height: 100vh;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background: red;
+  position: absolute;
+  bottom: 0;
+  right: auto;
+}
+
+.box-two {
+  background: yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 50%;
+  /*right: -4rem; it's means left */
+  z-index: -1; /*Diğer nesnenin önünde mi yoksa arkasındamı 
+  old karar verebiliriz 1:ön, -1:arka ayrıca değeri ne kadar büyürse 
+  genel anlamda diğer ekran değerlerinin önünde durabilir*/
+}
+
+.box-three {
+  height: 50%;
+  width: 80%;
+  /*position: fixed;*/
+  position: absolute;
+  background: blue;
+}
